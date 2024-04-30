@@ -11,7 +11,7 @@ services:
       PGRST_DB_URI: postgres://postgres:postgres@postgres:5432/postgres
       PGRST_DB_SCHEMA: public
       PGRST_DB_ANON_ROLE: postgres #In production this role should not be the same as the one used for the connection
-      PGRST_SERVER_PROXY_URI: "http://143.244.186.213:3000"
+      PGRST_SERVER_PROXY_URI: "http://165.22.79.202:3000"
     depends_on:
       - postgres
   postgres:
@@ -49,7 +49,7 @@ services:
     expose:
         - "8080"
     environment:
-        API_URL: http://143.244.186.213:3000/
+        API_URL: http://165.22.79.202:3000/
 
   nginx:
     image: nginx
